@@ -1,55 +1,98 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-catalog="black-november" data-theme="black-november" style="--accent: #a800ff;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Premium Academy | Black November</title>
+  <title>Isabel Premium Academy | Black November</title>
   <link rel="icon" href="assets/logo-premium.ico" type="image/x-icon">
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* «Habla con tu asesor»: el botón de WhatsApp, con texto, más grande y más visible. */
+    html[data-theme="black-november"] .whatsapp-button {
+      right: 18px;
+      bottom: 18px;
+      gap: 8px;
+      min-height: 52px;
+      padding: 0 20px;
+      background: #25d366;
+      font-size: 1rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+    html[data-theme="black-november"] .whatsapp-button svg { width: 22px; height: 22px; }
+    @media (max-width: 760px) {
+      /* En el celular: «Explorar los 4 cursos» y «Habla con tu asesor», mitad y mitad, abajo. */
+      html[data-theme="black-november"] .black-explore-button {
+        right: calc(50% + 5px);
+        left: 10px;
+        min-height: 52px;
+        padding: 0 10px;
+        font-size: 0.86rem;
+      }
+      html[data-theme="black-november"] .whatsapp-button {
+        right: 10px;
+        left: calc(50% + 5px);
+        bottom: 14px;
+        width: auto;
+        min-height: 52px;
+        padding: 0 10px;
+        font-size: 0.86rem;
+      }
+      html[data-theme="black-november"] .whatsapp-button span { display: inline; }
+    }
+  </style>
 </head>
 <body>
-  <header class="barra">
-    <a class="marca" href="?page=1" aria-label="Ir a la portada">
-      <img id="logo" alt="" />
-      <span id="nombre">Premium Academy | Black November</span>
+  <div id="app">
+    <header class="topbar">
+      <button class="brand-button" id="ir-portada" aria-label="Ir a la portada">
+        <span class="brand-logo-shell"><img class="brand-logo" id="logo" alt="Premium Academy | Black November"></span>
+        <span class="brand-name" id="nombre">Premium Academy | Black November</span>
+      </button>
+      <nav class="top-actions" aria-label="Acciones del catálogo">
+        <button class="icon-button hide-small" data-accion="anterior" aria-label="Página anterior" title="Página anterior"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+        <button class="counter-button" id="contador" data-accion="menu" aria-label="Página actual">1 / 37</button>
+        <button class="icon-button hide-small" data-accion="siguiente" aria-label="Página siguiente" title="Página siguiente"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+        <button class="cta-button" data-accion="menu">Ver los 4 cursos</button>
+        <button class="icon-button" data-accion="buscar" aria-label="Buscar" title="Buscar"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
+        <button class="icon-button" data-accion="menu" aria-label="Abrir menú" title="Contenido"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+      </nav>
+    </header>
+
+    <main class="catalog-shell">
+      <section class="reader-stage" aria-label="Catálogo navegable">
+        <button class="side-nav side-nav-left" data-accion="anterior" aria-label="Página anterior" title="Página anterior"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+        <div class="book-wrap">
+          <div id="book" class="book"></div>
+        </div>
+        <button class="side-nav side-nav-right" data-accion="siguiente" aria-label="Página siguiente" title="Página siguiente"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+        <div class="bn-offer-slot" id="oferta"></div>
+      </section>
+      <button class="black-explore-button" data-accion="menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg> Explorar los 4 cursos</button>
+    </main>
+
+    <section class="search-drawer" id="buscador" aria-label="Búsqueda">
+      <div class="drawer-header">
+        <h2>Buscar en el catálogo</h2>
+        <button class="icon-button dark" data-accion="cerrar" aria-label="Cerrar búsqueda" title="Cerrar"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+      </div>
+      <input class="search-input" id="busqueda" type="search" placeholder="Busca una prenda, módulo o técnica">
+      <div class="search-results" id="resultados"><p class="empty-message">Escribe una palabra para encontrar una hoja.</p></div>
+    </section>
+
+    <aside class="menu-drawer" id="menu" aria-label="Tabla de contenidos">
+      <div class="drawer-header">
+        <div><p class="drawer-kicker">Black November</p><h2>Elige tu curso</h2></div>
+        <button class="icon-button dark" data-accion="cerrar" aria-label="Cerrar menú" title="Cerrar"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+      </div>
+      <div class="menu-list" id="lista-cursos"></div>
+    </aside>
+
+    <button class="drawer-backdrop" id="fondo" data-accion="cerrar" aria-label="Cerrar panel"></button>
+
+    <a class="whatsapp-button" href="https://walink.co/jqg0nf" target="_blank" rel="noopener" aria-label="Habla con tu asesor">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.13c-.25.69-1.440 1.32-1.98 1.36-.53.04-1.03.25-3.46-.72-2.92-1.15-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.12 1.01-2.41.26-.28.57-.36.76-.36l.55.01c.18.01.42-.07.65.5.25.59.84 2.04.91 2.19.08.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.630 2.02 1.12 1 2.06 1.3 2.36 1.45.29.15.46.12.63-.07.17-.19.73-.85.92-1.14.19-.29.38-.24.65-.15.26.1 1.68.79 1.97.94.29.15.48.22.55.34.07.12.07.69-.18 1.38Z"/></svg>
+      <span>Habla con tu asesor</span>
     </a>
-    <button type="button" id="ver-cursos" class="boton-borde">Explorar los 4 cursos</button>
-  </header>
-
-  <main class="escenario">
-    <button type="button" class="flecha izq" id="anterior" aria-label="Página anterior">‹</button>
-    <div id="libro" class="libro"></div>
-    <button type="button" class="flecha der" id="siguiente" aria-label="Página siguiente">›</button>
-  </main>
-
-  <footer class="compra" id="compra" hidden>
-    <div class="compra-info">
-      <div class="compra-curso" id="compra-curso"></div>
-      <div class="compra-precio">
-        <span class="etiqueta" id="compra-etiqueta"></span>
-        <s id="compra-antes"></s>
-        <strong id="compra-oferta"></strong>
-        <span id="compra-sufijo"></span>
-        <span class="ahorro" id="compra-ahorro"></span>
-      </div>
-    </div>
-    <a class="boton-compra" id="compra-boton" target="_blank" rel="noopener">Ver curso</a>
-  </footer>
-  <div class="pagina-n" id="pagina-n"></div>
-
-  <a class="asesor" href="https://walink.co/jqg0nf" target="_blank" rel="noopener" aria-label="Habla con tu asesor">
-    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.13c-.25.69-1.44 1.32-1.98 1.36-.53.04-1.03.25-3.46-.72-2.92-1.15-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.12 1.01-2.41.26-.28.57-.36.76-.36l.55.01c.18.01.42-.07.65.5.25.59.84 2.04.91 2.19.08.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12 1 2.06 1.3 2.36 1.45.29.15.46.12.63-.07.17-.19.73-.85.92-1.14.19-.29.38-.24.65-.15.26.1 1.68.79 1.97.94.29.15.48.22.55.34.07.12.07.69-.18 1.38Z"/></svg>
-    <span>Habla con tu asesor</span>
-  </a>
-
-  <div class="indice" id="indice" hidden>
-    <div class="indice-caja" role="dialog" aria-modal="true" aria-labelledby="indice-titulo">
-      <div class="indice-cabeza">
-        <h2 id="indice-titulo">Los 4 cursos</h2>
-        <button type="button" class="cerrar" id="cerrar-indice" aria-label="Cerrar">×</button>
-      </div>
-      <div id="indice-lista" class="indice-lista"></div>
-    </div>
   </div>
 
   <script src="vendor/page-flip.browser.js"></script>
