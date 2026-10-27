@@ -1,0 +1,531 @@
+{
+  "theme": "black-november",
+  "navigationMode": "courses",
+  "brand": {
+    "name": "Premium Academy | Black November",
+    "accent": "#a800ff",
+    "logo": "imagenes/logo.png",
+    "hotlink": "",
+    "whatsappPhone": "+57 312 648 0077",
+    "whatsappMessage": "Hola, vi el catálogo Black November y quiero más información.",
+    "whatsappLink": "https://walink.co/jqg0nf"
+  },
+  "cta": {
+    "label": "Comprar curso",
+    "helper": "Explora las cuatro ofertas de Black November."
+  },
+  "enrollment": {
+    "enabled": false,
+    "options": []
+  },
+  "categories": [
+    {
+      "id": "portada",
+      "label": "Portada",
+      "order": 1
+    },
+    {
+      "id": "laboratorio-patronaje",
+      "label": "Laboratorio de Patronaje",
+      "order": 2,
+      "rangeLabel": "Pag1Contenido a Pag6Contenido",
+      "description": "Patronaje técnico y anatómico dentro de un espacio virtual privado.",
+      "purchaseUrl": "https://go.hotmart.com/E105072180V?ap=ffe8",
+      "purchaseLabel": "Comprar Laboratorio de Patronaje",
+      "priceLabel": "PRECIO 2026",
+      "offerPrice": "8,99 €",
+      "priceSuffix": "/ mes",
+      "whatsappMessage": "Hola, vi la oferta Black November y quiero información del Laboratorio de Patronaje."
+    },
+    {
+      "id": "taller-costura",
+      "label": "Taller de Costura",
+      "order": 3,
+      "rangeLabel": "Pag7Contenido a Pag13Contenido",
+      "description": "Confección, acabados, manejo de máquina y herramientas del taller.",
+      "purchaseUrl": "https://go.hotmart.com/B108108817J?ap=0efd",
+      "purchaseLabel": "Comprar Taller de Costura",
+      "priceLabel": "PRECIO 2026",
+      "offerPrice": "8,99 €",
+      "priceSuffix": "/ mes",
+      "whatsappMessage": "Hola, vi la oferta Black November y quiero información del Taller de Costura."
+    },
+    {
+      "id": "combo-masterclass",
+      "label": "Patronaje Pro: Oversize, Escalado y Blazer",
+      "order": 4,
+      "rangeLabel": "Pag14Contenido a Pag20Contenido",
+      "description": "Oversize, Blazer Americano y Escalado Semi Industrial en un solo combo.",
+      "purchaseUrl": "https://go.hotmart.com/S108121163O?ap=4fcc",
+      "purchaseLabel": "Comprar Patronaje Pro",
+      "priceLabel": "BLACK NOVEMBER",
+      "oldPrice": "75 €",
+      "offerPrice": "29,99 €",
+      "savings": "60%",
+      "whatsappMessage": "Hola, vi la oferta Black November y quiero comprar el Combo de Masterclass de Patronaje."
+    },
+    {
+      "id": "pijamas-lencera",
+      "label": "Masterclass Pijama Lencera: Desarrollo de Patronaje",
+      "order": 5,
+      "rangeLabel": "Pag21Contenido a Pag36Contenido",
+      "description": "Masterclass en vivo para aprender diseños de pijamas y lencería.",
+      "purchaseUrl": "https://go.hotmart.com/C108121173W?ap=3ce2",
+      "purchaseLabel": "Comprar Masterclass Pijama Lencera",
+      "priceLabel": "BLACK NOVEMBER",
+      "oldPrice": "65 €",
+      "offerPrice": "28,00 €",
+      "savings": "57%",
+      "whatsappMessage": "Hola, vi la oferta Black November y quiero información de la Masterclass de Pijamas Lencera."
+    }
+  ],
+  "pages": [
+    {
+      "title": "Black November",
+      "module": "Premium Academy",
+      "category": "portada",
+      "image": "imagenes/pagina-01.webp",
+      "description": "Promociones y precios de lanzamiento Black November.",
+      "keywords": [
+        "black november",
+        "ofertas",
+        "premium academy"
+      ]
+    },
+    {
+      "title": "Laboratorio de Patronaje",
+      "module": "Curso 1 · Laboratorio de Patronaje",
+      "category": "laboratorio-patronaje",
+      "image": "imagenes/pagina-02.webp",
+      "description": "Presentación del Laboratorio de Patronaje.",
+      "keywords": [
+        "laboratorio",
+        "patronaje",
+        "curso 1"
+      ]
+    },
+    {
+      "title": "Laboratorio de Patronaje",
+      "module": "Curso 1 · Laboratorio de Patronaje",
+      "category": "laboratorio-patronaje",
+      "image": "imagenes/pagina-03.webp",
+      "description": "Espacio virtual privado de patronaje técnico y anatómico.",
+      "keywords": [
+        "laboratorio",
+        "patronaje",
+        "técnico",
+        "anatómico"
+      ]
+    },
+    {
+      "title": "Patronaje técnico y anatómico",
+      "module": "Curso 1 · Laboratorio de Patronaje",
+      "category": "laboratorio-patronaje",
+      "image": "imagenes/pagina-04.webp",
+      "description": "Aprendizaje guiado por Isabel Villagómez.",
+      "keywords": [
+        "patronaje",
+        "técnica",
+        "anatomía"
+      ]
+    },
+    {
+      "title": "¿Para quién es?",
+      "module": "Curso 1 · Laboratorio de Patronaje",
+      "category": "laboratorio-patronaje",
+      "image": "imagenes/pagina-05.webp",
+      "description": "Para estudiantes, modistas, confeccionistas y patronistas.",
+      "keywords": [
+        "estudiantes",
+        "modistas",
+        "confeccionistas",
+        "patronistas"
+      ]
+    },
+    {
+      "title": "¿Cómo se estudia?",
+      "module": "Curso 1 · Laboratorio de Patronaje",
+      "category": "laboratorio-patronaje",
+      "image": "imagenes/pagina-06.webp",
+      "description": "Clases virtuales de patronaje, análisis del cuerpo y corrección de errores.",
+      "keywords": [
+        "virtual",
+        "análisis del cuerpo",
+        "errores"
+      ]
+    },
+    {
+      "title": "Suscripción mensual",
+      "module": "Curso 1 · Laboratorio de Patronaje",
+      "category": "laboratorio-patronaje",
+      "image": "imagenes/pagina-07.webp",
+      "description": "Oferta de lanzamiento del Laboratorio de Patronaje.",
+      "keywords": [
+        "suscripción",
+        "mensual",
+        "oferta",
+        "8.99"
+      ]
+    },
+    {
+      "title": "Taller de Costura",
+      "module": "Curso 2 · Taller de Costura",
+      "category": "taller-costura",
+      "image": "imagenes/pagina-08.webp",
+      "description": "Presentación del Taller de Costura.",
+      "keywords": [
+        "taller",
+        "costura",
+        "curso 2"
+      ]
+    },
+    {
+      "title": "Taller de Costura",
+      "module": "Curso 2 · Taller de Costura",
+      "category": "taller-costura",
+      "image": "imagenes/pagina-09.webp",
+      "description": "Sala virtual privada dedicada a la confección.",
+      "keywords": [
+        "taller",
+        "costura",
+        "confección"
+      ]
+    },
+    {
+      "title": "Confección en el taller",
+      "module": "Curso 2 · Taller de Costura",
+      "category": "taller-costura",
+      "image": "imagenes/pagina-10.webp",
+      "description": "Perfecciona técnicas y mejora terminados.",
+      "keywords": [
+        "confección",
+        "terminados",
+        "máquina"
+      ]
+    },
+    {
+      "title": "¿Qué aprenderás?",
+      "module": "Curso 2 · Taller de Costura",
+      "category": "taller-costura",
+      "image": "imagenes/pagina-11.webp",
+      "description": "Técnicas, acabados, máquina, implementos y herramientas.",
+      "keywords": [
+        "técnicas",
+        "acabados",
+        "herramientas"
+      ]
+    },
+    {
+      "title": "¿Cómo se estudia?",
+      "module": "Curso 2 · Taller de Costura",
+      "category": "taller-costura",
+      "image": "imagenes/pagina-12.webp",
+      "description": "Clases virtuales para estudiar confección.",
+      "keywords": [
+        "virtual",
+        "clases",
+        "confección"
+      ]
+    },
+    {
+      "title": "Suscripción mensual",
+      "module": "Curso 2 · Taller de Costura",
+      "category": "taller-costura",
+      "image": "imagenes/pagina-13.webp",
+      "description": "Oferta de lanzamiento del Taller de Costura.",
+      "keywords": [
+        "suscripción",
+        "mensual",
+        "oferta",
+        "8.99"
+      ]
+    },
+    {
+      "title": "Proyectos del taller",
+      "module": "Curso 2 · Taller de Costura",
+      "category": "taller-costura",
+      "image": "imagenes/pagina-14.webp",
+      "description": "Proyectos y prendas para trabajar en el taller.",
+      "keywords": [
+        "proyectos",
+        "blazer",
+        "oversize"
+      ]
+    },
+    {
+      "title": "Combo de Masterclass de Patronaje",
+      "module": "Curso 3 · Combo de Masterclass",
+      "category": "combo-masterclass",
+      "image": "imagenes/pagina-15.webp",
+      "description": "Tres formaciones de patronaje en un solo combo.",
+      "keywords": [
+        "combo",
+        "masterclass",
+        "patronaje",
+        "curso 3"
+      ]
+    },
+    {
+      "title": "Combo de Masterclass de Patronaje",
+      "module": "Curso 3 · Combo de Masterclass",
+      "category": "combo-masterclass",
+      "image": "imagenes/pagina-16.webp",
+      "description": "Contenido del combo de masterclass.",
+      "keywords": [
+        "combo",
+        "masterclass",
+        "patronaje"
+      ]
+    },
+    {
+      "title": "Masterclass Oversize",
+      "module": "Curso 3 · Combo de Masterclass",
+      "category": "combo-masterclass",
+      "image": "imagenes/pagina-17.webp",
+      "description": "Diseños y patronaje Oversize.",
+      "keywords": [
+        "oversize",
+        "patronaje"
+      ]
+    },
+    {
+      "title": "Masterclass Blazer Americano",
+      "module": "Curso 3 · Combo de Masterclass",
+      "category": "combo-masterclass",
+      "image": "imagenes/pagina-18.webp",
+      "description": "Diseños y patronaje de Blazer Americano.",
+      "keywords": [
+        "blazer americano",
+        "patronaje"
+      ]
+    },
+    {
+      "title": "Escalado Semi Industrial",
+      "module": "Curso 3 · Combo de Masterclass",
+      "category": "combo-masterclass",
+      "image": "imagenes/pagina-19.webp",
+      "description": "Ejercicios de escalado semi industrial.",
+      "keywords": [
+        "escalado",
+        "semi industrial"
+      ]
+    },
+    {
+      "title": "Tres formaciones",
+      "module": "Curso 3 · Combo de Masterclass",
+      "category": "combo-masterclass",
+      "image": "imagenes/pagina-20.webp",
+      "description": "Oversize, Blazer Americano y Escalado Semi Industrial.",
+      "keywords": [
+        "oversize",
+        "blazer",
+        "escalado"
+      ]
+    },
+    {
+      "title": "Oferta del combo",
+      "module": "Curso 3 · Combo de Masterclass",
+      "category": "combo-masterclass",
+      "image": "imagenes/pagina-21.webp",
+      "description": "Las tres formaciones reunidas en una compra.",
+      "keywords": [
+        "oferta",
+        "combo",
+        "30 dólares"
+      ]
+    },
+    {
+      "title": "Masterclass de Pijamas Lencera",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-22.webp",
+      "description": "Presentación de la masterclass de pijamas y lencería.",
+      "keywords": [
+        "pijamas",
+        "lencería",
+        "curso 4"
+      ]
+    },
+    {
+      "title": "Masterclass de Pijamas Lencera",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-23.webp",
+      "description": "Aprendizaje en vivo dentro de una sala privada.",
+      "keywords": [
+        "pijamas",
+        "lencera",
+        "en vivo"
+      ]
+    },
+    {
+      "title": "Contenido de la masterclass",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-24.webp",
+      "description": "Contenido de la masterclass de pijamas.",
+      "keywords": [
+        "pijamas",
+        "lencería",
+        "contenido"
+      ]
+    },
+    {
+      "title": "Diseños de pijamas",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-25.webp",
+      "description": "Diseños incluidos en la masterclass.",
+      "keywords": [
+        "diseños",
+        "pijamas",
+        "lencería"
+      ]
+    },
+    {
+      "title": "Diseños de pijamas",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-26.webp",
+      "description": "Diseños incluidos en la masterclass.",
+      "keywords": [
+        "diseños",
+        "pijamas",
+        "lencería"
+      ]
+    },
+    {
+      "title": "Diseños de pijamas",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-27.webp",
+      "description": "Diseños incluidos en la masterclass.",
+      "keywords": [
+        "diseños",
+        "pijamas",
+        "lencería"
+      ]
+    },
+    {
+      "title": "Diseños de pijamas",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-28.webp",
+      "description": "Diseños incluidos en la masterclass.",
+      "keywords": [
+        "diseños",
+        "pijamas",
+        "lencería"
+      ]
+    },
+    {
+      "title": "Diseños de pijamas",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-29.webp",
+      "description": "Diseños incluidos en la masterclass.",
+      "keywords": [
+        "diseños",
+        "pijamas",
+        "lencería"
+      ]
+    },
+    {
+      "title": "Diseños de pijamas",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-30.webp",
+      "description": "Diseños incluidos en la masterclass.",
+      "keywords": [
+        "diseños",
+        "pijamas",
+        "lencería"
+      ]
+    },
+    {
+      "title": "Diseños de pijamas",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-31.webp",
+      "description": "Diseños incluidos en la masterclass.",
+      "keywords": [
+        "diseños",
+        "pijamas",
+        "lencería"
+      ]
+    },
+    {
+      "title": "Diseños de pijamas",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-32.webp",
+      "description": "Diseños incluidos en la masterclass.",
+      "keywords": [
+        "diseños",
+        "pijamas",
+        "lencería"
+      ]
+    },
+    {
+      "title": "Diseños de pijamas",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-33.webp",
+      "description": "Diseños incluidos en la masterclass.",
+      "keywords": [
+        "diseños",
+        "pijamas",
+        "lencería"
+      ]
+    },
+    {
+      "title": "Diseños de pijamas",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-34.webp",
+      "description": "Diseños incluidos en la masterclass.",
+      "keywords": [
+        "diseños",
+        "pijamas",
+        "lencería"
+      ]
+    },
+    {
+      "title": "Crop Top Lencero",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-35.webp",
+      "description": "Diseño Crop Top Lencero.",
+      "keywords": [
+        "crop top",
+        "lencero",
+        "lencería"
+      ]
+    },
+    {
+      "title": "Crop Top Lencero",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-36.webp",
+      "description": "Diseño Crop Top Lencero.",
+      "keywords": [
+        "crop top",
+        "lencero",
+        "lencería"
+      ]
+    },
+    {
+      "title": "Conjunto Crop Top y Pantalón",
+      "module": "Curso 4 · Pijamas Lencera",
+      "category": "pijamas-lencera",
+      "image": "imagenes/pagina-37.webp",
+      "description": "Conjunto de Crop Top y pantalón.",
+      "keywords": [
+        "crop top",
+        "pantalón",
+        "conjunto",
+        "lencería"
+      ]
+    }
+  ]
+}

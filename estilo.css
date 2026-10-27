@@ -1,0 +1,85 @@
+:root {
+  --fondo: #07050b;
+  --fondo-2: #140a1f;
+  --acento: #a800ff;
+  --texto: #f4ecff;
+  --suave: #b9a7cc;
+  --verde: #25d366;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: radial-gradient(circle at 80% 10%, #2a0b45 0%, var(--fondo) 45%) fixed, var(--fondo);
+  color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.barra {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px max(16px, env(safe-area-inset-left)) 12px max(16px, env(safe-area-inset-right));
+}
+.marca { display: flex; align-items: center; gap: 10px; color: var(--texto); text-decoration: none; font-weight: 800; min-width: 0; }
+.marca img { height: 34px; width: auto; }
+.marca span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.boton-borde {
+  border: 1px solid var(--acento); background: transparent; color: var(--texto);
+  border-radius: 999px; padding: 9px 16px; font-weight: 700; cursor: pointer; white-space: nowrap;
+}
+.boton-borde:hover { background: rgba(168, 0, 255, 0.18); }
+.escenario { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 4px 8px 150px; min-height: 0; }
+.libro { width: min(1100px, 100%); }
+.libro .pagina { background: #111; }
+.libro .pagina img { width: 100%; height: 100%; object-fit: contain; display: block; user-select: none; pointer-events: none; }
+.flecha {
+  flex: none; width: 46px; height: 46px; border-radius: 50%; border: none; cursor: pointer;
+  background: rgba(255, 255, 255, 0.1); color: var(--texto); font-size: 30px; line-height: 1;
+}
+.flecha:hover { background: rgba(168, 0, 255, 0.4); }
+.compra {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  padding: 12px max(16px, env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  background: rgba(10, 6, 16, 0.94); border-top: 1px solid rgba(168, 0, 255, 0.45); backdrop-filter: blur(8px);
+}
+.compra-curso { font-weight: 800; font-size: 15px; }
+.compra-precio { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin-top: 3px; font-size: 14px; color: var(--suave); }
+.compra-precio .etiqueta { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--acento); font-weight: 800; }
+.compra-precio strong { color: #fff; font-size: 20px; }
+.compra-precio .ahorro { background: var(--acento); color: #fff; border-radius: 6px; padding: 1px 7px; font-weight: 800; font-size: 12px; }
+.boton-compra {
+  flex: none; background: var(--acento); color: #fff; text-decoration: none; font-weight: 800;
+  border-radius: 999px; padding: 13px 22px; box-shadow: 0 10px 26px rgba(168, 0, 255, 0.4);
+}
+.boton-compra:hover { filter: brightness(1.12); }
+.pagina-n { position: fixed; left: 16px; bottom: 100px; font-size: 12px; color: var(--suave); z-index: 40; }
+.asesor {
+  position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: 104px; z-index: 60;
+  display: inline-flex; align-items: center; gap: 8px; min-height: 52px; padding: 0 20px;
+  background: var(--verde); color: #fff; text-decoration: none; font-weight: 800; font-size: 16px;
+  border-radius: 999px; box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+.indice { position: fixed; inset: 0; z-index: 100; background: rgba(0, 0, 0, 0.7); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.indice[hidden] { display: none; }
+.indice-caja { background: var(--fondo-2); border: 1px solid rgba(168, 0, 255, 0.5); border-radius: 16px; width: min(560px, 100%); max-height: 85vh; overflow: auto; padding: 18px; }
+.indice-cabeza { display: flex; align-items: center; justify-content: space-between; }
+.indice-cabeza h2 { margin: 0; font-size: 20px; }
+.cerrar { background: none; border: none; color: var(--texto); font-size: 30px; cursor: pointer; }
+.indice-lista { display: grid; gap: 10px; margin-top: 12px; }
+.curso { text-align: left; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); color: var(--texto); border-radius: 12px; padding: 12px 14px; cursor: pointer; }
+.curso:hover { border-color: var(--acento); }
+.curso b { display: block; font-size: 16px; }
+.curso small { color: var(--suave); }
+:focus-visible { outline: 3px solid var(--acento); outline-offset: 2px; }
+
+/* CELULAR: una página a la vez, el botón de compra abajo y «Habla con tu asesor» bien visible. */
+@media (max-width: 760px) {
+  .marca span { display: none; }
+  .flecha { display: none; }
+  .escenario { padding: 0 6px 190px; }
+  .compra { flex-direction: column; align-items: stretch; gap: 10px; }
+  .boton-compra { text-align: center; padding: 14px; font-size: 16px; }
+  .asesor { bottom: 160px; min-height: 56px; padding: 0 22px; font-size: 17px; }
+  .pagina-n { bottom: 166px; }
+}

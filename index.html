@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Premium Academy | Black November</title>
+  <link rel="icon" href="assets/logo-premium.ico" type="image/x-icon">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="barra">
+    <a class="marca" href="?page=1" aria-label="Ir a la portada">
+      <img id="logo" alt="" />
+      <span id="nombre">Premium Academy | Black November</span>
+    </a>
+    <button type="button" id="ver-cursos" class="boton-borde">Explorar los 4 cursos</button>
+  </header>
+
+  <main class="escenario">
+    <button type="button" class="flecha izq" id="anterior" aria-label="Página anterior">‹</button>
+    <div id="libro" class="libro"></div>
+    <button type="button" class="flecha der" id="siguiente" aria-label="Página siguiente">›</button>
+  </main>
+
+  <footer class="compra" id="compra" hidden>
+    <div class="compra-info">
+      <div class="compra-curso" id="compra-curso"></div>
+      <div class="compra-precio">
+        <span class="etiqueta" id="compra-etiqueta"></span>
+        <s id="compra-antes"></s>
+        <strong id="compra-oferta"></strong>
+        <span id="compra-sufijo"></span>
+        <span class="ahorro" id="compra-ahorro"></span>
+      </div>
+    </div>
+    <a class="boton-compra" id="compra-boton" target="_blank" rel="noopener">Ver curso</a>
+  </footer>
+  <div class="pagina-n" id="pagina-n"></div>
+
+  <a class="asesor" href="https://walink.co/jqg0nf" target="_blank" rel="noopener" aria-label="Habla con tu asesor">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.13c-.25.69-1.44 1.32-1.98 1.36-.53.04-1.03.25-3.46-.72-2.92-1.15-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.12 1.01-2.41.26-.28.57-.36.76-.36l.55.01c.18.01.42-.07.65.5.25.59.84 2.04.91 2.19.08.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12 1 2.06 1.3 2.36 1.45.29.15.46.12.63-.07.17-.19.73-.85.92-1.14.19-.29.38-.24.65-.15.26.1 1.68.79 1.97.94.29.15.48.22.55.34.07.12.07.69-.18 1.38Z"/></svg>
+    <span>Habla con tu asesor</span>
+  </a>
+
+  <div class="indice" id="indice" hidden>
+    <div class="indice-caja" role="dialog" aria-modal="true" aria-labelledby="indice-titulo">
+      <div class="indice-cabeza">
+        <h2 id="indice-titulo">Los 4 cursos</h2>
+        <button type="button" class="cerrar" id="cerrar-indice" aria-label="Cerrar">×</button>
+      </div>
+      <div id="indice-lista" class="indice-lista"></div>
+    </div>
+  </div>
+
+  <script src="vendor/page-flip.browser.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
